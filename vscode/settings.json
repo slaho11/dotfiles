@@ -1,0 +1,138 @@
+{
+    // Zen Mode
+    "zenMode.fullScreen": false,
+    "zenMode.silentNotifications": false,
+    "zenMode.restore": false,
+
+    // editor - fonts
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+
+    // editor - general
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.trimAutoWhitespace": true,
+    // "editor.guides.bracketPairs": "active",
+    // "editor.inlayHints.enabled": "on",
+
+    // files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        // OS-specific
+        "**/.DS_Store": true,  // macOS
+        "**/Thumbs.db": true,  // Windows
+
+        // Version control
+        "**/.git": true,
+        "**/.svn": true,  // Subversion
+        "**/.hg": true,   // Mercurial
+
+        // Python Core
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/venv": true,
+        "**/.venv": true,
+        ".python-version": true,  // pyenv
+
+        // Python Tools & Linting
+        "**/.mypy_cache": true,
+        "**/.pyrightcache": true,
+        "**/.ruff_cache": true,
+
+        // Python Testing
+        "**/.pytest_cache": true,
+        "**/.coverage": true,    // Coverage reports
+        "**/.hypothesis": true,  // Property-based testing
+        "**/.tox": true,         // Test automation
+    },
+
+   // search
+    "search.exclude": {
+        // Editor/IDE
+        "**/.vscode": true,
+
+        // System & Build
+        "**/node_modules": true,
+        "**/*.code-search": true,
+        "**/dist": true,
+        "**/build": true,
+
+        // Python Environment
+        "**/venv": true,
+        "**/.venv": true,
+
+        // Python Tools & Testing
+        "**/.mypy_cache": true,
+        "**/.pyrightcache": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+    },
+
+    // terminal
+    "terminal.external.osxExec": "wezterm",
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.env.osx": {
+        "VIRTUAL_ENV_PROMPT": "{project}-{python} "
+    },
+
+    // window
+    "window.customTitleBarVisibility": "never",
+    "window.nativeFullScreen": false,
+    "window.newWindowDimensions": "maximized",
+    "window.restoreFullscreen": true,
+
+    // workbench
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.tabSizing": "shrink",
+
+    // languages
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+
+    // extensions
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+
+    "cSpell.language": "en,en-US",
+    "cSpell.enabled": true,
+
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2
+    },
+
+    "vsicons.dontShowNewVersionMessage": true
+}
